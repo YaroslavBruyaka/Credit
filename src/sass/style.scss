@@ -1,0 +1,11 @@
+* {
+    font-family: 'Mazzard_M', sans-serif;
+}
+.container{
+    position: relative;
+    width: 1236px;
+    margin: 0 auto;
+}
+
+@import "blocks/header";
+@import "blocks/promo";

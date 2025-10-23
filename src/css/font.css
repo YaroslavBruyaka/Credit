@@ -1,27 +1,42 @@
-/* @font-face {
-    font-family: 'Museo Sans Cyrl';
-    src: local('MuseoSansCyrl-500'),
-        url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
-        url('../fonts/MuseoSansCyrl-500.woff') format('woff');
-    font-weight: normal;
+@font-face{
+    font-family: 'Mazzard_H';
+    src: url('../fonts/MazzardH-ExtraLight.woff') format('woff'),
+         url('../fonts/MazzardH-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Museo Sans Cyrl';
-    src: local('MuseoSansCyrl-300'),
-        url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
-        url('../fonts/MuseoSansCyrl-300.woff') format('woff');
+@font-face{
+    font-family: 'Mazzard_H';
+    src: url('../fonts/MazzardH-Medium.woff') format('woff'),
+         url('../fonts/MazzardH-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Mazzard_M';
+    src: url('../fonts/MazzardM-Light.woff') format('woff'),
+         url('../fonts/MazzardM-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Museo Sans Cyrl';
-    src: local('MuseoSansCyrl-700'),
-        url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
-        url('../fonts/MuseoSansCyrl-700.woff') format('woff');
-    font-weight: 700;
+@font-face{
+    font-family: 'Mazzard_M';
+    src: url('../fonts/MazzardM-Medium.woff') format('woff'),
+         url('../fonts/MazzardM-Medium.woff2') format('woff2');
+    font-weight: 500;
     font-style: normal;
-} */
-
+}
+@font-face{
+    font-family: 'Mazzard_M';
+    src: url('../fonts/MazzardM-Regular.woff') format('woff'),
+         url('../fonts/MazzardM-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Mazzard_M';
+    src: url('../fonts/MazzardM-SemiBold.woff') format('woff'),
+         url('../fonts/MazzardM-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}

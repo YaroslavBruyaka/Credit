@@ -1,0 +1,36 @@
+.promo{
+    padding-top: 73px;
+    background-color: #F5F7FA;
+    min-height: 794px;
+    &__wrapper{
+    }
+    &__img{
+        position: absolute;
+        left: -100px;
+    }
+    &__text{
+        margin-left: 325px;
+    }
+    &__definition{
+        font-family: 'Mazzard_H', sans-serif;
+        font-size: 72px;
+        font-weight: 500;
+        line-height: 94px;
+        padding-top: 100px;
+        span{
+            color: #00BDA0;
+        }
+    }
+    &__title{
+        color: #3B4244;
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 400;
+    }
+    &__subtitle{
+        color: #607D8B;
+        font-size: 18px;
+        line-height: 35px;
+        font-weight: 400;
+    }
+}
