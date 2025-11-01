@@ -37,11 +37,60 @@
                         <h1 class="promo__title">Первый заём с промокодом <br>"ZERO" - бесплатно! *</h1>
                         <div class="promo__subtitle">(активируйте промокод в Вашем <br>Личном кабинете)</div>
                     </div>
+                    <div class="promo__bid">
+                        <div class="promo__tabs">
+                            <a href="#" class="promo__tab promo__tab_active">Первый заём</a>
+                            <a href="#" class="promo__tab">Повторный заём</a>
+                        </div>
+                        <label class="promo__label" for="promo__sum">Сумма</label>
+                        <div class="promo__sumWrapper">
+                            <output class="promo__outputSum" name="value" for="promo__sum"></output>
+                            <span>рублей</span>
+                            <input class="promo__sum" type="range" id="promo__sum" min="1000" max="100000" step="500" value="5000">
+                        </div>
+                        <label class="promo__label" for="promo__day">На срок</label>
+                        <div class="promo__dayWrapper">
+                            <output class="promo__outputDay" name="value" for="promo__day"></output>
+                            <span>дней</span>
+                            <input class="promo__day" type="range" id="promo__day" min="5" max="60" step="1" value="10">
+                        </div>
+                        <div class="promo__itog">
+                            <div class="promo__column">
+                                <div class="promo__descr">Вы берете</div>
+                                <div class="promo__info">5000<span>руб.</span></div>
+                            </div>
+                            <div class="promo__column">
+                                <div class="promo__descr">срок погашения</div>
+                                <div class="promo__info">11 декабря, 2020</div>
+                            </div>
+                            <div class="promo__column">
+                                <div class="promo__descr">Сумма к возврату</div>
+                                <div class="promo__info">5000<span>руб.</span></div>
+                            </div>
+                        </div>
+                        <button class="button">Подать заявку</button>
+                        <a href="#" class="promo__instruct">Как не допустить просроченный задолженности</a>
+                        <a href="#" class="promo__rules">Требования к заемщикам</a>
+                        <div class="promo__conclusion">Расчет носит ознакомительный характер. <br>Окончательные условия будут определены при подаче заявки в ЛК</div>
+                    </div>
 
                 </div>
             </div>
         </section>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="title">Наши преимущества</h2>
+                <div class="advantages__wrapper">
+                    <div class="advantages__bid">
+                        <img src="icons/check.png" alt="check" class="advantages__check">
+                        <div class="advantages__percent">90%</div>
+                        <p>одобрения</p>
+                        <button class="button">подать заявку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    
+    <script src="JS/script.js"></script>
 </body>
 </html>

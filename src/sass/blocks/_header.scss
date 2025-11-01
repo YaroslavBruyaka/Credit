@@ -43,5 +43,8 @@
             letter-spacing: .05em; //5%
             margin-left: 10px;
         }
+        &:focus{
+            outline: none;
+        }
     }
 }

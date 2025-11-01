@@ -3,6 +3,7 @@
     background-color: #F5F7FA;
     min-height: 794px;
     &__wrapper{
+        display: flex;
     }
     &__img{
         position: absolute;
@@ -32,5 +33,133 @@
         font-size: 18px;
         line-height: 35px;
         font-weight: 400;
+    }
+    &__bid{
+        position: absolute;
+        right: 0;
+        max-width: 506px;
+        padding: 40px 60px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    &__tabs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+    &__tab{
+        width: 193px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 48px;
+        font-weight: 400;
+        color: #607D8B;
+        background-color: #F5F7FA;
+        text-align: center;
+        border-radius: 0 50px 50px 0;
+        &:nth-child(1){
+            border-radius: 50px 0 0 50px;
+        }
+        &:hover{
+            text-decoration: none;
+            color: #607D8B;
+        }
+        &_active{
+            color:#fff;
+            background-color: #00BDA0;
+            &:hover{
+                color:#fff;
+            }
+        }
+    }
+    &__sumWrapper, &__dayWrapper{
+        position: relative;
+        border: 1px solid #DFE9F8;
+        border-bottom: none;
+        border-radius: 5px;
+        width: 385px;
+        height: 50px;
+        span{
+            position: absolute;
+            right: 20px;
+            color: #607D8B;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 45px;
+        }
+    }
+    &__label{
+        color: #607D8B;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 40px;
+        margin-bottom: 0;
+        margin-top: 18px;
+    }  
+    &__outputSum, &__outputDay{
+        padding-left: 22px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 48px;
+        color: #3B4244;
+    }
+    &__sum, &__day{
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        border: 1px solid #00BDA0;
+        display: block;
+        width: 385px;
+        appearance: none;
+        &::-webkit-slider-thumb{
+            width: 27px;
+            height: 9px;
+            appearance: none;
+            background-color:#00BDA0;
+            border-radius: 10px;
+        }
+    }
+    &__itog{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+    &__descr{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #607D8B;
+        text-transform: uppercase;
+    }
+    &__info{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #3B4244;
+        margin-bottom: 24px;
+        span{
+            font-size: 13px;
+            margin-left: 6px;
+        }
+    }
+    &__instruct{
+        display: block;
+        margin-top: 17px;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+    &__rules{
+        display: block;
+        margin-top: 3px;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+    &__conclusion{
+        margin-top: 21px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        color: #A3A3A3;
     }
 }
