@@ -1,6 +1,9 @@
 * {
     font-family: 'Mazzard_M', sans-serif;
 }
+body{
+    position: relative;
+}
 .container{
     position: relative;
     width: 1236px;
@@ -11,3 +14,12 @@
 @import "blocks/button";
 @import "blocks/advantages";
 @import "blocks/title";
+@import "blocks/simply";
+@import "blocks/repay";
+@import "blocks/get";
+@import "blocks/form";
+@import "blocks/questions";
+@import "blocks/publications";
+@import "blocks/presentation";
+@import "blocks/footer";
+@import "blocks/login";

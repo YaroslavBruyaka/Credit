@@ -1,0 +1,42 @@
+.publications{
+    background-color: #F5F7FA;
+    min-height: 506px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 53px;
+    }
+    &__block{
+        width: 400px;
+        height: 280px;
+        padding: 39px 0 33px 48px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    &__header{
+        font-family: 'Mazzard_H', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #3B4244;
+    }
+    &__subheader{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #607D8B;
+        margin-top: 17px;
+    }
+    &__link{
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #00BDA0;
+        margin-top: 41px;
+        &:hover{
+            color: #00BDA0;
+            text-decoration: none;
+        }
+    }
+}

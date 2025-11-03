@@ -37,43 +37,42 @@
                         <h1 class="promo__title">Первый заём с промокодом <br>"ZERO" - бесплатно! *</h1>
                         <div class="promo__subtitle">(активируйте промокод в Вашем <br>Личном кабинете)</div>
                     </div>
-                    <div class="promo__bid">
-                        <div class="promo__tabs">
-                            <a href="#" class="promo__tab promo__tab_active">Первый заём</a>
-                            <a href="#" class="promo__tab">Повторный заём</a>
+                    <form class="form" action="#" method="post">
+                        <div class="form__tabs">
+                            <a href="#" class="form__tab form__tab_active">Первый заём</a>
+                            <a href="#" class="form__tab">Повторный заём</a>
                         </div>
-                        <label class="promo__label" for="promo__sum">Сумма</label>
-                        <div class="promo__sumWrapper">
-                            <output class="promo__outputSum" name="value" for="promo__sum"></output>
-                            <span>рублей</span>
-                            <input class="promo__sum" type="range" id="promo__sum" min="1000" max="100000" step="500" value="5000">
+                        <label class="form__label" for="form__sum">Сумма</label>
+                        <div class="form__sumWrapper">
+                            <output class="form__outputSum" name="value" for="form__sum"></output>
+                            <span class="form__rub">рублей</span>
+                            <input class="form__sum" type="range" id="form__sum" min="1000" max="30000" step="500" value="5000">
                         </div>
-                        <label class="promo__label" for="promo__day">На срок</label>
-                        <div class="promo__dayWrapper">
-                            <output class="promo__outputDay" name="value" for="promo__day"></output>
-                            <span>дней</span>
-                            <input class="promo__day" type="range" id="promo__day" min="5" max="60" step="1" value="10">
+                        <label class="form__label" for="form__day">На срок</label>
+                        <div class="form__dayWrapper">
+                            <output class="form__outputDay" name="value" for="form__day"></output>
+                            <span class="form__days">дней</span>
+                            <input class="form__day" type="range" id="form__day" min="7" max="30" step="1" value="10">
                         </div>
-                        <div class="promo__itog">
-                            <div class="promo__column">
-                                <div class="promo__descr">Вы берете</div>
-                                <div class="promo__info">5000<span>руб.</span></div>
+                        <div class="form__itog">
+                            <div class="form__column">
+                                <div class="form__descr">Вы берете</div>
+                                <div class="form__info">5000<span>руб.</span></div>
                             </div>
-                            <div class="promo__column">
-                                <div class="promo__descr">срок погашения</div>
-                                <div class="promo__info">11 декабря, 2020</div>
+                            <div class="form__column">
+                                <div class="form__descr">срок погашения</div>
+                                <div class="form__info">11 декабря, 2020</div>
                             </div>
-                            <div class="promo__column">
-                                <div class="promo__descr">Сумма к возврату</div>
-                                <div class="promo__info">5000<span>руб.</span></div>
+                            <div class="form__column">
+                                <div class="form__descr">Сумма к возврату</div>
+                                <div class="form__info">5000<span>руб.</span></div>
                             </div>
                         </div>
                         <button class="button">Подать заявку</button>
-                        <a href="#" class="promo__instruct">Как не допустить просроченный задолженности</a>
-                        <a href="#" class="promo__rules">Требования к заемщикам</a>
-                        <div class="promo__conclusion">Расчет носит ознакомительный характер. <br>Окончательные условия будут определены при подаче заявки в ЛК</div>
-                    </div>
-
+                        <a href="#" class="form__instruct">Как не допустить просроченный задолженности</a>
+                        <a href="#" class="form__rules">Требования к заемщикам</a>
+                        <div class="form__conclusion">Расчет носит ознакомительный характер. <br>Окончательные условия будут определены при подаче заявки в ЛК</div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -84,13 +83,257 @@
                     <div class="advantages__bid">
                         <img src="icons/check.png" alt="check" class="advantages__check">
                         <div class="advantages__percent">90%</div>
-                        <p>одобрения</p>
+                        <div class="advantages__txt">одобрения</div>
                         <button class="button">подать заявку</button>
+                    </div>
+                    <div class="advantages__blocks">
+                        <div class="advantages__item">
+                            <img src="icons/stopwatch.png" alt="stopwatch" class="advantages__icons">
+                            <div class="advantages__descr">Деньги за 1 минуту<br>после одобрения</div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="icons/calendar.png" alt="calendar" class="advantages__icons">
+                            <div class="advantages__descr">Продление<br>без штрафов</div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="icons/locked.png" alt="locked" class="advantages__icons">
+                            <div class="advantages__descr">Безопасность<br>персональных данных</div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="icons/24-hours.png" alt="24-hours" class="advantages__icons">
+                            <div class="advantages__descr">Погашение займа 24 часа.<br>Без комиссии</div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="icons/crown.png" alt="crown" class="advantages__icons">
+                            <div class="advantages__descr">Премиум услуги<br>для постоянных клиентов</div>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="icons/stars.png" alt="stars" class="advantages__icons">
+                            <div class="advantages__descr">Улучшение<br>кредитной истории</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="simply">
+            <div class="container">
+                <h2 class="title">Получите заём просто</h2>
+                <div class="simply__content">
+                    <img src="icons/Group.png" alt="Group" class="simply__group">
+                    <div class="simply__items">
+                        <div class="simply__header">Позвоните или оставьте заявку</div>
+                        <div class="simply__subheader">Оставить заявку можно <span>заполнив форму</span>на сайте</div>
+                        <div class="simply__header">Дождитесь принятия решения</div>
+                        <div class="simply__subheader">Решение принимается всего за 1 минуту</div>
+                        <div class="simply__header">Получите деньги</div>
+                        <div class="simply__subheader">Мы переведем Вам деньги на карту</div>
+                    </div>
+                </div>
+                <button class="button button_simply">оформить заявку</button>
+            </div>
+            <img src="img/hand_just.png" alt="hand_just" class="simply__img">
+        </section>
+        <section class="repay">
+            <div class="container">
+                <h2 class="title">Как погасить заём</h2>
+                <div class="repay__col">
+                    <span>Способ погашения</span>
+                    <span>Зачисление</span>
+                </div>
+                <div class="repay__block">
+                    <div class="repay__img"><img src="icons/card.png" alt="card"></div>
+                    <div class="repay__text">Банковской картой<br>Visa/MasterCard/Мир<br>в личном кабинете</div>
+                    <div class="repay__moment">
+                        <img src="icons/timerActive.png" alt="timerActive">
+                        <span>Моментально</span>
+                    </div>
+                    <button class="button button_repay">погасить</button>
+                </div>
+                <div class="repay__block">
+                    <div class="repay__img"><img src="icons/qiwi.png" alt="qiwi"></div>
+                    <div class="repay__text">Через терминалы Qiwi</div>
+                    <div class="repay__moment">
+                        <img src="icons/timerNoActive.png" alt="timerNoActive">
+                        <span>Моментально</span>
+                    </div>
+                    <button class="button button_repay">погасить</button>
+                </div>
+                <div class="repay__block">
+                    <div class="repay__img"><img src="icons/CyberPlat.png" alt="CyberPlat"></div>
+                    <div class="repay__text">Через терминалы CyberPlat</div>
+                    <div class="repay__moment">
+                        <img src="icons/timerNoActive.png" alt="timerNoActive">
+                        <span>Моментально</span>
+                    </div>
+                    <button class="button button_repay">погасить</button>
+                </div>
+                <div class="repay__block">
+                    <div class="repay__img"><img src="icons/goldCrown.png" alt="goldCrown"></div>
+                    <div class="repay__text">Через платежную систему<br>"Золотая корона"</div>
+                    <div class="repay__moment">
+                        <img src="icons/timerNoActive.png" alt="timerNoActive">
+                        <span>Моментально</span>
+                    </div>
+                    <button class="button button_repay">погасить</button>
+                </div>
+            </div>
+        </section>
+        <section class="get">
+            <div class="container">
+                <h2 class="title">Получить заём прямо сейчас</h2>
+                <div class="get__wrapper">
+                    <img src="img/hand_get.png" alt="hand_get" class="get__img">
+                    <form action="#" method="post" class="form form_get">
+                        <label class="form__label form__label_get" for="form__sum1">Необходимая сумма</label>
+                        <div class="form__sumWrapper">
+                            <output class="form__outputSum" name="value" for="form__sum1"></output>
+                            <span class="form__rub">рублей</span>
+                            <input class="form__sum" type="range" id="form__sum1" min="1000" max="30000" step="500" value="5000">
+                        </div>
+                        <div class="form__interval">
+                            <span>1 000</span>
+                            <span>30 000</span>
+                        </div>
+                        <label class="form__label form__label_get" for="form__day1">На какой срок</label>
+                        <div class="form__dayWrapper">
+                            <output class="form__outputDay" name="value" for="form__day1"></output>
+                            <span class="form__days">дней</span>
+                            <input class="form__day" type="range" id="form__day1" min="7" max="30" step="1" value="10">
+                        </div>
+                        <div class="form__interval">
+                            <span class="form__interval">7</span>
+                            <span class="form__interval">30</span>
+                        </div>
+                        <div class="form__itog form__itog_get">
+                            <div class="form__column">
+                                <div class="form__descr">дата возврата</div>
+                                <div class="form__info form__info_get">11 декабря, 2020</div>
+                            </div>
+                            <div class="form__column">
+                                <div class="form__descr">Сумма к возврату</div>
+                                <div class="form__info form__info_get">5000<span>руб.</span></div>
+                            </div>
+                        </div>
+                        <button class="button">Получить деньги</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <h2 class="title">Часто задаваемые вопросы</h2>
+                <div class="questions__wrapper">
+                    <div class="questions__items">
+                        <div class="questions__item">
+                            <div class="questions__text">Как мне оформить микрозайм</div>
+                            <div class="questions__plus"></div>
+                            <span></span>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__text">Что будет, если я просрочу платеж</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__text">Как мне оформить микрозайм</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__text">Что будет, если я просрочу платеж</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                    </div>
+                    <div class="questions__items">
+                        <div class="questions__item">
+                            <div class="questions__text">Как погасить займ</div>
+                            <div class="questions__plus"></div>
+                            <span></span>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__text">Могу ли я продлить платежи</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__text">Как погасить займ</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__text">Могу ли я продлить платежи</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="publications">
+            <div class="container">
+                <h2 class="title">Публикации</h2>
+                <div class="publications__wrapper">
+                    <div class="publications__block">
+                        <div class="publications__header">Зарплата вперед - новый<br>сервис от Platiza.ru</div>
+                        <div class="publications__subheader">МКК Платиза ООО объявляет<br>о запуске нового сервиса Зарплата<br>вперед и продукта Зарплатный</div>
+                        <a href="#" class="publications__link">platiza.ru</a>
+                    </div>
+                    <div class="publications__block">
+                        <div class="publications__header">Зарплата вперед - новый<br>сервис от Platiza.ru</div>
+                        <div class="publications__subheader">МКК Платиза ООО объявляет<br>о запуске нового сервиса Зарплата<br>вперед и продукта Зарплатный</div>
+                        <a href="#" class="publications__link">platiza.ru</a>
+                    </div>
+                    <div class="publications__block">
+                        <div class="publications__header">Зарплата вперед - новый<br>сервис от Platiza.ru</div>
+                        <div class="publications__subheader">МКК Платиза ООО объявляет<br>о запуске нового сервиса Зарплата<br>вперед и продукта Зарплатный</div>
+                        <a href="#" class="publications__link">platiza.ru</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="presentation">
+            <div class="container">
+                <h2 class="title">Какие у нас займы</h2>
+                <div class="presentation__wrapper">
+                    <div class="presentation__block">
+                        <img src="icons/cash.png" alt="cash" class="presentation__img">
+                        <div class="presentation__text">Займ до 30 000 руб</div>
+                    </div>
+                    <div class="presentation__block">
+                        <img src="icons/car.png" alt="car" class="presentation__img">
+                        <div class="presentation__text">Автозайм</div>
+                    </div>
+                    <div class="presentation__block">
+                        <img src="icons/buildings.png" alt="buildings" class="presentation__img">
+                        <div class="presentation__text">Под залог недвижимости</div>
+                    </div>
+                </div>
+                <div class="presentation__descr">Platiza — это популярный российский онлайн-сервис мгновенной финансовой помощи. Здесь можно за минуту получить <br>
+                                                заём на небольшую сумму без похода в офис, справок с работы, имея под рукой только паспорт и телефон.
+                                                <br><br>
+                                                Мы предоставляем надёжное и безопасное решение людям, оказавшимся в экстренных финансовых ситуациях. <br>
+                                                Внедряя эффективные технологии, мы создали сервис, который стал персональным финансовым помощником <br>
+                                                для всех наших клиентов.
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__text">© 2011–2020 Микрокредитная компания «Платиза.ру»<br>
+                                     (общество с ограниченной ответственностью).<br> 
+                                     Все права защищены.</div>
+        </div>
+    </footer>
+    <div class="overlay">
+        <div class="login">
+            <div class="login__close">&times;</div>
+            <div class="login__title">Вход в личный кабинет</div>
+            <form  action="#" method="post" class="login__form">
+                <input required class="login__input" name="phone" type="text" placeholder="Номер телефона">
+                <input required class="login__input" name="pass" type="password" placeholder="Пароль">
+                <a href="#" class="login__forgot">Забыли пароль?</a>
+                <button class="login__btn">Войти</button>
+                <button class="login__btn">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
     <script src="JS/script.js"></script>
 </body>
 </html>

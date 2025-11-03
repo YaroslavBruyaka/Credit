@@ -1,25 +1,26 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const promo__sum = document.querySelector('.promo__sum'),
-          promo__outputSum = document.querySelector('.promo__outputSum'),
-          promo__day = document.querySelector('.promo__day'),
-          promo__outputDay = document.querySelector('.promo__outputDay');
+    const form__sum = document.querySelector('.form__sum'),
+          form__outputSum = document.querySelector('.form__outputSum'),
+          form__day = document.querySelector('.form__day'),
+          form__outputDay = document.querySelector('.form__outputDay');
           
 
     const onRangeInputSum = () => {
-        const value = promo__sum.value;
-        promo__outputSum.value = value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ');
+
+        const value = form__sum.value;
+        form__outputSum.value = value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ');
     };
 
     const onRangeInputDay = () => {
-        const value = promo__day.value;
-        promo__outputDay.value = value;
+        const value = form__day.value;
+        form__outputDay.value = value;
     };
 
 
     onRangeInputSum();
     onRangeInputDay();
 
-    promo__sum.addEventListener('input',onRangeInputSum);
-    promo__day.addEventListener('input',onRangeInputDay);
+    form__sum.addEventListener('input',onRangeInputSum);
+    form__day.addEventListener('input',onRangeInputDay);
 
 });

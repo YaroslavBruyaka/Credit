@@ -12,4 +12,14 @@
     &:focus{
         outline: none;
     }
+    &_simply{
+        display: block;
+        width: 285px;
+        margin: 0 auto;
+    }
+    &_repay{
+        width: 203px;
+        background-color: #fff;
+        border: 1px solid #FFD56A;
+    }
 }

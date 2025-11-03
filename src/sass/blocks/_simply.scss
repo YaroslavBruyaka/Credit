@@ -1,0 +1,39 @@
+.simply{
+    position: relative;
+    min-height: 708px;
+    background-color: #F5F7FA;
+    &__content{
+        position: relative;
+        width: 509px;
+        margin: 80px auto 84px;
+    }
+    &__group{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__items{
+        margin-left: 101px;
+    }
+    &__header{
+        font-family: 'Mazzard_H', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: #3B4244;
+    }
+    &__subheader{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #607D8B;
+        margin-bottom: 72px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__img{
+        position: absolute;
+        right: 230px;
+        top: 150px;
+    }
+}
