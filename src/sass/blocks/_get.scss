@@ -1,5 +1,4 @@
 .get{
-    background-color: #F5F7FA;
     min-height: 810px;
     &__wrapper{
         height: 568px;
@@ -12,3 +11,48 @@
         left: 115px;
     }
 }
+
+
+
+@media (max-width: 1269px) { //от 1201 до 1269
+    .get{
+        &__img{
+            left: 80px;
+        }
+    }
+}
+@media (max-width: 1200px) {//от 992 до 1200
+    .get{
+        &__img{
+            left: 20px;
+        }
+    }
+}
+
+@media (max-width: 991px) { // от 768 до 991
+    .get{
+        min-height: 710px;
+        &__wrapper{
+            margin-top: 50px;
+            height: 485px;
+        }
+        &__img{
+            left: 6px;
+            width: 490px;
+            top: 34px;
+        }
+    }
+} 
+@media (max-width: 767px) {// от 451 до 767
+    .get{
+        min-height: 620px;
+        &__wrapper{
+            margin-top: 35px;
+        }
+        &__img{
+            display: none;
+        }
+    }
+}
+// @media (max-width: 450px) { // от 420 до 450
+// } 

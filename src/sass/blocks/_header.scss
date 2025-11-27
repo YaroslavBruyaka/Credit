@@ -1,9 +1,11 @@
 .header{
+    background-color: #fff;
     &__nav{
-        padding: 0;
+        padding: 2px 5px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
     &__logo{
         width: 94px;
@@ -47,4 +49,122 @@
             outline: none;
         }
     }
+    &__burger{
+        display: none;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-46%);
+        width: 60px;
+        height: 33px;
+        span{
+            display: block;
+            height: 7px;
+            width: 100%;
+            background-color:#00BDA0;
+            margin-bottom: 4px;
+        }
+    }
 }
+@media (max-width: 1269px) { //от 1201 до 1269
+    .header{
+        &__nav{
+            justify-content: center;
+        }
+        &__item{
+            margin: 0 38px;
+        }
+    }
+}
+@media (max-width: 1200px) {//от 992 до 1200
+    .header{
+        &__logo {
+            width: 85px;
+            height: 35px;
+        }
+        &__item{
+            margin: 0 22px;
+            font-size: 17px;
+        }
+        &__button{
+            width: 150px;
+        }
+    }
+}
+
+@media (max-width: 991px) { // от 768 до 991
+    .header{
+        &__{
+            justify-content: space-around;
+        }
+        &__logo{
+            display: none;
+        }
+        &__menu{
+            padding-left: 20px;
+        }
+        &__item{
+            margin: 0px 8px;
+            font-size: 16px;
+        }
+        &__button{
+            width: 150px;
+            margin-left: 23px;
+        }
+    }
+} 
+
+@media (max-width: 767px) {// от 451 до 767
+    .header{
+        &__nav{
+            justify-content: end;
+        }
+        &__logo{
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 18%;
+            transform: translateX(-80%);
+        }
+        &__menu{
+            display: none;
+        }
+        &__button{
+            margin-right: 5px;
+            margin-left: 0;
+            height: 60px;
+        }
+        &__burger{
+            display: block;
+        }
+    }
+}
+@media (max-width: 450px) { // от 320 до 450
+    .header{
+        &__logo{
+            width: 75px;
+            height: 30px;
+            left: 53%;
+            top: 12%;
+
+        }
+        &__button{
+            width: 90px;
+            height: 40px;
+            margin-right: -4px;
+            span{
+                font-size: 11px;
+                margin-left: 0;
+            }
+        }
+        &__burger{
+            width: 45px;
+            left: 10px;
+            height: 27px;
+            span{
+                height: 6px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+} 

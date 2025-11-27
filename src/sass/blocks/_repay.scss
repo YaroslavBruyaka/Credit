@@ -1,5 +1,4 @@
 .repay{
-    background-color: #F5F7FA;
     min-height: 760px;
     &__col{
         font-size: 12px;
@@ -40,5 +39,55 @@
             font-weight: 400;
             color: #3B4244;
         }
+    }
+}
+@media (max-width: 1200px) {//от 992 до 1200
+    .repay{
+        &__col{
+            span{
+                margin: 0 75px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) { // от 768 до 991
+    .repay{
+        &__col{
+            padding-right: 60px;
+            span{
+                margin: 0 50px;
+            }
+        }
+        &__text{
+            width: 200px;
+            font-size: 16px;
+        }
+        &__moment{
+            span{
+                margin-left: 6px;
+                font-size: 16px;
+            }
+        }
+    }
+} 
+@media (max-width: 767px) {// от 451 до 767
+    .repay{
+        min-height: 465px;
+        &__block{
+            height: 75px;
+        }
+        &__text, &__col{
+            display: none;
+        }
+        &__moment{
+            span{
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 450px) {
+    .repay{
+        min-height: 460px;
     }
 }

@@ -1,5 +1,4 @@
 .publications{
-    background-color: #F5F7FA;
     min-height: 506px;
     &__wrapper{
         display: flex;
@@ -7,7 +6,7 @@
         margin-top: 53px;
     }
     &__block{
-        width: 400px;
+        width: 32.5%;
         height: 280px;
         padding: 39px 0 33px 48px;
         background-color: #fff;
@@ -38,5 +37,26 @@
             color: #00BDA0;
             text-decoration: none;
         }
+    }
+}
+@media (max-width: 991px) { // от 768 до 991
+    .publications{
+        &__block{
+            padding-left: 20px;
+            height: 260px;
+        }
+        &__header{
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__subheader{
+            font-size: 13px;
+            line-height: 21px;
+        }
+    }
+} 
+@media (max-width: 767px) {// от 451 до 767
+    .publications{
+        display: none;
     }
 }

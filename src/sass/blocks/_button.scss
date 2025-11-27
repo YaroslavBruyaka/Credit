@@ -23,3 +23,19 @@
         border: 1px solid #FFD56A;
     }
 }
+@media (max-width: 767px) {// от 451 до 767
+    .button{
+        &_repay{
+            width: 125px;
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 450px) { // от 420 до 450
+    .button{
+        &_repay{
+            width: 90px;
+            height: 40px;
+        }
+    }
+} 

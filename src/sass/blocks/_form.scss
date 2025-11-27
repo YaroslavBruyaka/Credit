@@ -166,3 +166,65 @@
         color: #A3A3A3;
     }
 }
+@media (max-width: 1269px) { //от 1201 до 1269
+    .form{
+        right: 6px;
+    }
+}
+
+@media (max-width: 1200px) {//от 992 до 1200
+    .form{
+        padding: 20px 32px;
+        &_get{
+            margin-right: 10px;
+        }
+    }
+}
+@media (max-width: 991px) {// от 768 до 991
+    .form{
+        &_get{
+            margin-right: 1px;
+            padding: 20px 10px;
+        }
+    }
+}
+@media (max-width: 767px) {// от 451 до 767
+    .form{
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px 14px;
+        width: 415px;
+    }
+}
+@media (max-width: 390px) { // от 320 до 390
+    .form{
+        width: 320px;
+        &__sumWrapper, &__dayWrapper{
+            width: 300px;
+        }
+        &__sum, &__day{
+            width: 300px;
+        }
+        &__info{
+            font-size: 13px;
+            line-height: 15px;
+        }
+        &__instruct, &__rules{
+            font-size: 13px;
+        }
+        &__outputDay, &__outputSum{
+            font-size: 20px;
+        }
+        &__conclusion{
+            margin-top: 18px;
+            font-size: 10px;
+        }
+        &__label{
+            margin-top: 8px;
+        }
+        &__tab{
+            height: 42px;
+            line-height: 40px;
+        }
+    }
+} 

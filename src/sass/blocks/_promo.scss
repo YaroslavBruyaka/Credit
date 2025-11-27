@@ -1,6 +1,5 @@
 .promo{
     padding-top: 73px;
-    background-color: #F5F7FA;
     min-height: 794px;
     &__wrapper{
         display: flex;
@@ -34,4 +33,83 @@
         line-height: 35px;
         font-weight: 400;
     }
+    &__mobText{
+        display: none;
+    }
 }
+@media (max-width: 1330px){
+    .promo{
+        &__img{
+            left: -74px;
+        }
+        &__text {
+            margin-left: 338px;
+        }
+    }
+}
+@media (max-width: 1200px) {//от 992 до 1200
+    .promo{
+        padding-top: 40px;
+        min-height: 715px;
+        &__img{
+            left: -85px;
+        }
+        &__text{
+            margin-left: 30%;
+        }
+        &__definition{
+            font-size: 47px;
+            line-height: 55px;
+        }
+        &__title{
+            font-size: 17px;
+            line-height: 30px;
+        }
+        &__subtitle{
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
+@media (max-width: 991px) { // от 768 до 991
+    .promo{
+        &__text{
+            display: none;
+        }
+    }
+}
+@media (max-width: 767px) {// от 451 до 767
+    .promo{
+        min-height: 670px;
+        background-color: #fff;
+        padding-top: 0;
+        &__img{
+            display: none;
+        }
+        &__mobText{
+            padding: 15px 0 0 0;
+            display: block;
+            text-align: center;
+            color: #3B4244;
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 400;
+        }
+    }
+}
+@media (max-width: 450px) { // от 391 до 450
+    .promo{
+        &__mobText{
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 390px) { // от 320 до 390
+    .promo{
+        min-height: 610px;
+        &__mobText{
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+} 

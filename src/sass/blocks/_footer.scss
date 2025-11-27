@@ -7,5 +7,16 @@
         line-height: 20px;
         color: #607D8B;
         padding-top: 47px;
+        padding-left: 2px;
+    }
+}
+@media (max-width: 767px) {// от 451 до 767
+    .footer{
+        min-height: 105px;
+        &__text{
+            font-size: 12px;
+            line-height: 18px;
+            padding-top: 25px;
+        }
     }
 }

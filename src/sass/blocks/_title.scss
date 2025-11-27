@@ -5,3 +5,16 @@
     color: #3B4244;
     text-align: center;
 }
+@media (max-width: 767px) {// от 451 до 767
+    .title{
+        font-size: 29px;
+        &_repay{
+            margin-bottom: 40px;
+        }
+    }
+}
+@media (max-width: 450px) { // от 420 до 450
+    .title{
+        font-size: 27px;
+    }
+} 

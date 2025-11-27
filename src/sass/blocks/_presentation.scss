@@ -1,15 +1,14 @@
 .presentation{
-    background-color: #F5F7FA;
     min-height: 662px;
     &__wrapper{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 45px;
+        margin: 45px 2px 0 2px;
     }
     &__block{
         position: relative;
-        width: 400px;
+        width: 32.5%;
         height: 250px;
         background-color: #00BDA0;
         border-radius: 10px;
@@ -37,6 +36,51 @@
         font-weight: 300;
         line-height: 30px;
         color: #607D8B;
-        margin-top: 69px;
+        margin: 69px 2px 0 2px;
     }
 }
+@media (max-width: 1200px) {//от 992 до 1200
+    .presentation{
+        &__descr{
+            font-size: 17px;
+        }
+    }
+}
+@media (max-width: 991px) { // от 768 до 991
+    .presentation{
+        &__block{
+            width: 33%;
+        }
+        &__descr{
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 45px;
+        }
+    }
+} 
+
+@media (max-width: 767px) {// от 451 до 767
+    .presentation{
+        min-height: 600px;
+        &__block{
+            height: 215px;
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: 145px;
+        }
+        &__descr{
+            font-size: 12px;
+            line-height: 20px;
+            margin-top: 37px;
+        }
+    }
+}
+@media (max-width: 450px) { // от 420 до 450
+    .presentation{
+        &__text{
+            font-size: 13px;
+        }
+    }
+} 
