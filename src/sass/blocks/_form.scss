@@ -128,8 +128,9 @@
         line-height: 20px;
         color: #607D8B;
         text-transform: uppercase;
+        width: 92px;
     }
-    &__info{
+    &__infoBack, &__infoCredit, &__infoDate{
         font-size: 18px;
         font-weight: 500;
         line-height: 20px;
@@ -205,7 +206,7 @@
         &__sum, &__day{
             width: 300px;
         }
-        &__info{
+        &__infoBack, &__infoCredit, &__infoDate{
             font-size: 13px;
             line-height: 15px;
         }

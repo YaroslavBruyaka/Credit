@@ -8,7 +8,7 @@
 }
 .login{
     position: fixed;
-    top: 15%;
+    top: 12%;
     left: 50%;
     transform: translateX(-50%);
     width: 510px;
@@ -69,3 +69,43 @@
         cursor: pointer;
     }
 }
+
+
+
+@media (max-width: 991px) { // от 768 до 991
+    .login{
+        width: 450px;
+        height: 470px;
+        &__title{
+            font-size: 25px;
+        }
+    }
+} 
+
+@media (max-width: 767px) {// от 451 до 767
+    .login{
+        width: 350px;
+        height: 430px;
+        &__title{
+            font-size: 18px;
+        }
+        &__input{
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 450px) { // от 420 до 450
+    .login{
+        height: 390px;
+        &__title{
+            font-size: 16px;
+        }
+        &__input{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        &__btn{
+            margin-top: 15px;
+        }
+    }
+} 
